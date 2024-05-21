@@ -1,3 +1,43 @@
 body {
-    background-color: #fbadaa;
+    background-color: #fcdfdf;
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-bottom: 60px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo {
+    font-family: lavishly yours;
+    
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.furniture-home img{
+    max-width: 55%;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+}
+
+.bathroom-home img {
+    max-width: 27%;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    align-content: center;
 }
