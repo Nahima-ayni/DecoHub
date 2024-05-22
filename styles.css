@@ -1,43 +1,117 @@
 body {
-    background-color: #fcdfdf;
-    padding-top: 70px;
-    padding-left: 50px;
-    padding-bottom: 60px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8e7e7;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: #f8e7e7;
     padding: 10px 20px;
-    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .logo {
-    font-family: lavishly yours;
-    
-    font-size: 24px;
-    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 32px;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
 }
 
 .search-bar input[type="text"] {
-    padding: 5px;
-    margin: 0 10px;
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.furniture-home img{
-    max-width: 55%;
-    margin: 0 auto;
-    height: auto;
-    width: auto;
-    border-radius: 10px;
+.search-bar input[type="text"]::placeholder {
+    color: #aaa;
 }
 
-.bathroom-home img {
-    max-width: 27%;
-    margin: 0 auto;
+.search-bar::before {
+    content: "\1F50D";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #aaa;
+}
+
+.icons span {
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.main-image {
+    position: relative;
+    flex: 2;
+    margin-right: 20px;
+}
+
+.main-image img {
+    width: 100%;
     height: auto;
-    width: auto;
-    border-radius: 10px;
-    align-content: center;
+    display: block;
+}
+
+.main-image .caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.category {
+    position: relative;
+}
+
+.category img {
+    width: 150px;
+    height: 250px;
+    display: block;
+    margin-bottom: -10px;
+}
+
+.category .caption {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    top: -10px;
 }
