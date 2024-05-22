@@ -1,0 +1,28 @@
+{
+  "name": "DecoHub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "deco.js",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Nahima-ayni/DecoHub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nahima-ayni/DecoHub/issues"
+  },
+  "homepage": "https://github.com/Nahima-ayni/DecoHub#readme"
+}

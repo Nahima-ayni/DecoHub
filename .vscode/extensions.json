@@ -1,5 +1,6 @@
 {
     "recommendations": [
         "tabnine.tabnine-vscode"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
