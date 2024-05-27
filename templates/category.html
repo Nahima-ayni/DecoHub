@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ category_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='deco.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='category.css') }}">
+</head>
+<body>
+    <main>
+        <h1 class="left-aligned">{{ category_name }}</h1>
+        <section class="product-grid">
+            {% if category_name == 'lighting' %}
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/butterfly.jpeg') }}" alt="Butterfly lamp stand">
+                    </a>
+                    <div class="caption">
+                        <p>Butterfly lamp stand - Beautiful lamp for you!</p>
+                        <p class="price">Ksh 1500</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/Couple Statue Shelf Aesthetic Decorations .jpeg') }}" alt="Couple Aesthetic lamp">
+                    </a>
+                    <div class="caption">
+                        <p>Abstract Couple Lamp Figurines: Modern home decor for bedroom or office. Perfect anniversary gift!</p>
+                        <p class="price">Ksh 3500</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/globe chandelier.jpeg') }}" alt="Globe chandelier">
+                    </a>
+                    <div class="caption">
+                        <p>Globe chandelier - Elegant design for modern homes</p>
+                        <p class="price">Ksh 12750</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/chandelier 2.jpeg') }}" alt="Chandelier 2">
+                    </a>
+                    <div class="caption">
+                        <p>Chandelier - Sleek, wave-like hanging light fixture. </p>
+                        <p class="price">Ksh 58000</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/chandelier 3.jpeg') }}" alt="Chandelier 3">
+                    </a>
+                    <div class="caption">
+                        <p>Chandelier - Artistic circular lights interlinked with leaf-like designs</p>
+                        <p class="price">Ksh 16537</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/chandelier.jpeg') }}" alt="Chandelier">
+                    </a>
+                    <div class="caption">
+                        <p> chandelier transcends mere lighting — it’s a sculptural masterpiece that graces any space with its contemporary allure.</p>
+                        <p class="price">Ksh 113570</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/Lamp for Bedside Reading Desk.jpeg') }}" alt="Lamp for bedside reading desk">
+                    </a>
+                    <div class="caption">
+                        <p>Lamp for bedside reading desk</p>
+                        <p class="price">Ksh 6500</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/lamp.jpeg') }}" alt="Bedside lamp">
+                    </a>
+                    <div class="caption">
+                        <p>Bedside lamp</p>
+                        <p class="price">Ksh 9300</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/LED Table Desk Lamp .jpeg') }}" alt="Table desk lamp">
+                    </a>
+                    <div class="caption">
+                        <p>Table desk lamp</p>
+                        <p class="price">ksh 8500</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/Light Globe Chandelier Bubble Gold Pendant.jpeg') }}" alt="Light Globe Chandelier Bubble Gold Pendant">
+                    </a>
+                    <div class="caption">
+                        <p>Light Globe Chandelier Bubble Gold Pendant</p>
+                        <p class="price">Ksh 21350</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/Louise Modern chandelier.jpeg') }}" alt="Louise Modern chandelier">
+                    </a>
+                    <div class="caption">
+                        <p>Louise Modern chandelier</p>
+                        <p class="price">57550</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/Metal Black Chandelier Height Adjustable Pendant Lighting.jpeg') }}" alt="Metal Black Chandelier Height Adjustable Pendant Lighting">
+                    </a>
+                    <div class="caption">
+                        <p>Metal Black Chandelier Height Adjustable Pendant Lighting</p>
+                        <p class="price">95550</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/Porsa chandelier.jpeg') }}" alt="Porsa chandelier">
+                    </a>
+                    <div class="caption">
+                        <p>Porsa chandelier</p>
+                        <p class="price">75950</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/ScandinavianRing Chandelier.jpeg') }}" alt="Scandinavian Ring Chandelier">
+                    </a>
+                    <div class="caption">
+                        <p>Scandinavian Ring Chandelier</p>
+                        <p class="price">67850</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='lighting/white chandelier.jpeg') }}" alt="White chandelier">
+                    </a>
+                    <div class="caption">
+                        <p>White chandelier</p>
+                        <p class="price">69850</p>
+                    </div>
+                </div>
+
+
+            {% elif category_name == 'furnitures' %}
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/chair and sofa/chair 1 green.jpeg') }}" alt="Green chair">
+                </a>
+                <div class="caption">
+                    <p>Green </p>
+                    <p class="price">Ksh 1500</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/chair and sofa/chair 2 red.jpeg') }}" alt="Red Chair">
+                </a>
+                <div class="caption">
+                    <p>Red Chair</p>
+                    <p class="price">Ksh 3500</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/chair and sofa/chair 3 blue.jpeg') }}" alt="Blue Chair">
+                </a>
+                <div class="caption">
+                    <p>Blue chair</p>
+                    <p class="price">Ksh 12750</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/chair and sofa/chair 4 grey.jpeg') }}" alt="grey chair">
+                </a>
+                <div class="caption">
+                    <p>Grey chair</p>
+                    <p class="price">Ksh 58000</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/chair and sofa/chair 5.jpeg') }}" alt="Chair">
+                </a>
+                <div class="caption">
+                    <p>Chair</p>
+                    <p class="price">Ksh 16537</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/chair and sofa/grey dark sofa.jpeg') }}" alt="Grey dark sofa">
+                </a>
+                <div class="caption">
+                    <p>Grey dark sofa</p>
+                    <p class="price">Ksh 113570</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/chair and sofa/sofa green and grey.jpeg') }}" alt="Sofa green and grey">
+                </a>
+                <div class="caption">
+                    <p>sofa green and gray</p>
+                    <p class="price">Ksh 6500</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/chair and sofa/sofa grey.jpeg') }}" alt="sofa grey">
+                </a>
+                <div class="caption">
+                    <p>sofa grey</p>
+                    <p class="price">Ksh 9300</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/chair and sofa/Sofas Ideas Drawing Room.jpeg') }}" alt="Sofa room">
+                </a>
+                <div class="caption">
+                    <p>Sofa room</p>
+                    <p class="price">ksh 8500</p>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/a1a172ae-06ff-488e-b5ca-9a52248d41d6.jpeg') }}" alt="Dining Table">
+                </a>
+                <div class="caption">
+                    <p>Dining table</p>
+                    <p class="price">Ksh 21350</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (1).jpeg') }}" alt="D2">
+                </a>
+                <div class="caption">
+                    <p>D2</p>
+                    <p class="price">57550</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (2).jpeg') }}" alt="D3">
+                </a>
+                <div class="caption">
+                    <p>D3</p>
+                    <p class="price">95550</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (3).jpeg') }}" alt="D4">
+                </a>
+                <div class="caption">
+                    <p>D4</p>
+                    <p class="price">75950</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (4).jpeg') }}" alt="D5">
+                </a>
+                <div class="caption">
+                    <p>D5</p>
+                    <p class="price">67850</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (5).jpeg') }}" alt="D6">
+                </a>
+                <div class="caption">
+                    <p>d6</p>
+                    <p class="price">69850</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (7).jpeg') }}" alt="D7">
+                </a>
+                <div class="caption">
+                    <p>d6</p>
+                    <p class="price">69850</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (8).jpeg') }}" alt="D8">
+                </a>
+                <div class="caption">
+                    <p>D8</p>
+                    <p class="price">69850</p>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (9).jpeg') }}" alt="D9">
+                </a>
+                <div class="caption">
+                    <p>D9</p>
+                    <p class="price">69850</p>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (10).jpeg') }}" alt="D10">
+                </a>
+                <div class="caption">
+                    <p>D10</p>
+                    <p class="price">69850</p>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (11).jpeg') }}" alt="D11">
+                </a>
+                <div class="caption">
+                    <p>D11</p>
+                    <p class="price">69850</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/DT 1.jpeg') }}" alt="DT">
+                </a>
+                <div class="caption">
+                    <p>DT</p>
+                    <p class="price">69850</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='furniture/dining table/e1a00fdf-0c0d-4f41-8601-90a54c671a94.jpeg') }}" alt="DTT">
+                </a>
+                <div class="caption">
+                    <p>d6</p>
+                    <p class="price">69850</p>
+                </div>
+            </div>
+                <!-- Bathroom vanities products -->
+                <!-- Add similar structure for other categories -->
+            {% else %}
+                <p>No products available in this category.</p>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>

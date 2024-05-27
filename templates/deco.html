@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecoHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='deco.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">DecoHub</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="icons">
+            <span>🛒</span>
+            <span>🔔</span>
+            {% if current_user.is_authenticated %}
+                <a href="{{ url_for('profile') }}"><span>👤</span></a>
+            {% else %}
+                <a href="{{ url_for('login') }}"><span>Login</span></a>
+                <a href="{{ url_for('register') }}"><span>Register</span></a>
+            {% endif %}
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <a href="{{ url_for('category', category_name='furnitures') }}">
+                <img src="{{ url_for('static', filename='furniture/chair and sofa/Sofas Ideas Drawing Room.jpeg') }}" alt="Furnitures">
+                <div class="caption">Furnitures</div>
+            </a>
+        </section>
+        <section class="categories">
+            <div class="category">
+                <a href="{{ url_for('category', category_name='bathroom_vanities') }}">
+                    <img src="{{ url_for('static', filename='bathroom/Niccy LED Oval Bathroom Mirror with Stepless Dimmable, 20x32 Lighted Vanity Mirror for Bathroom Wall Mounted LED Mirror with Frame Anti-Fog Memory LED Smart Mirror(Horizontal_Vertical).jpeg') }}" alt="Bathroom vanities">
+                    <div class="caption">Bathroom vanities</div>
+                </a>
+            </div>
+            <div class="category">
+                <a href="{{ url_for('category', category_name='dining_table') }}">
+                    <img src="{{ url_for('static', filename='furniture/dining table/D2  (9).jpeg') }}" alt="Dining Table">
+                    <div class="caption">Dining Table</div>
+                </a>
+            </div>
+            <div class="category">
+                <a href="{{ url_for('category', category_name='vases') }}">
+                    <img src="{{ url_for('static', filename='vases/2e092729-6f09-4a7c-94a2-ff9585441856.jpeg') }}" alt="Vases">
+                    <div class="caption">Vases</div>
+                </a>
+            </div>
+            <div class="category">
+                <a href="{{ url_for('category', category_name='lighting') }}">
+                    <img src="{{ url_for('static', filename='lighting/lamp.jpeg') }}" alt="Lighting lamps">
+                    <div class="caption">Lighting lamps</div>
+                </a>
+            </div>
+            <div class="category">
+                <a href="{{ url_for('category', category_name='bedroom') }}">
+                    <img src="{{ url_for('static', filename='bedroom/6b7ddb35-f06e-47fa-ae92-f6f975c9659d.jpeg') }}" alt="Bedroom">
+                    <div class="caption">bedroom</div>
+                </a>
+            </div>
+        </section>
+        
+    </main>
+    <script src="{{ url_for('static', filename='js/deco.js') }}"></script>
+</body>
+</html>

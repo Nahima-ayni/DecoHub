@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9E5E5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9E5E5;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 32px;
+    color: #e48d94;
+    margin-left: 15px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.icons span, .icons a {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero .caption {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    color: #0c0c0c;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.category .caption {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #8b0000;
+}
