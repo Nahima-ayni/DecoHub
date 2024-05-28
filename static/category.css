@@ -14,6 +14,13 @@ main {
     margin: auto;
 }
 
+/* styles.css */
+
+.left-align {
+    text-align: left;
+}
+
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -29,7 +36,6 @@ main {
     background-color: #f5dede;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -39,10 +45,13 @@ main {
 }
 
 .product-item img {
-    width: 300px; /* Adjust this to the desired width */
-    height: 300px; /* Adjust this to the desired height */
-    object-fit: cover; /* Ensures the image covers the box without distortion */
+    width: 310px;
+    height: 310px; /* Adjust this to the desired height */
+    object-fit: cover;
+    
 }
+
+
 
 .caption {
     padding: 10px;
@@ -53,6 +62,9 @@ main {
     width: 100%;
     margin: 0; /* Remove margin */
     margin-left: 30px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px; 
 }
 
 .price {
@@ -63,20 +75,47 @@ main {
     margin: 5px 0; /* Adjust margin to reduce space */
 }
 
+.add-to-cart-btn {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart-btn img {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .product-item img {
+      grid-template-columns: repeat(1, 1fr); /* Change to single column layout */
+    }
+}
+
 @media (max-width: 1024px) {
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .product-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .product-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
     }
 }

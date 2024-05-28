@@ -98,7 +98,5 @@ def category(category_name):
     return render_template('category.html', category_name=category_name)
 
 
-
-
 if __name__ == '__main__':
     app.run(debug=True)

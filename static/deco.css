@@ -95,9 +95,9 @@ main {
 }
 
 .category img {
-    width: 100%;
-    height: auto;
     flex: 1;
+    width: 300px;
+    height: 300px;
 }
 
 .category .caption {
@@ -105,4 +105,9 @@ main {
     font-size: 18px;
     text-align: center;
     color: #8b0000;
+}
+
+.category .caption a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Ensure the link color matches the surrounding text */
 }
