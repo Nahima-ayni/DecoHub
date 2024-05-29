@@ -9,6 +9,9 @@ main h1.left-aligned {
     margin-left: 0 !important;
 }
 
+.icons {
+    margin-right: 100px;
+}
 main {
     width: 100%;
     margin: auto;
@@ -51,7 +54,16 @@ main {
     
 }
 
-
+.add-to-cart {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #113c18;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 80px;
+}
 
 .caption {
     padding: 10px;
@@ -75,25 +87,7 @@ main {
     margin: 5px 0; /* Adjust margin to reduce space */
 }
 
-.add-to-cart-btn {
-    background-color: #ff9900;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
-.add-to-cart-btn img {
-    margin-right: 8px;
-    vertical-align: middle;
-}
 
 
 @media only screen and (max-width: 768px) {

@@ -111,3 +111,42 @@ main {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Ensure the link color matches the surrounding text */
 }
+
+.footer-container {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-links, .contact-info, .reach-us {
+    margin-bottom: 10px;
+}
+
+.footer-links h3, .contact-info h3, .reach-us h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    text-decoration: none;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.developers {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.copyright {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}

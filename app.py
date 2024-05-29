@@ -9,6 +9,9 @@ from flask_bcrypt import Bcrypt
 import os
 from models import User  # Import your User model
 from database import session  # Import your database session
+from flask_mysqldb import MySQL
+import MySQLdb.cursors
+from flask import request
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
@@ -93,9 +96,54 @@ def logout():
 def profile():
     return render_template('profile.html', user=current_user)
 
+#... (rest of the code remains the same)
+
 @app.route('/category/<category_name>')
 def category(category_name):
-    return render_template('category.html', category_name=category_name)
+    products = []  # assuming you have a list of products for each category
+    return render_template('category.html', category_name=category_name, products=products)
+
+from flask import session
+
+@app.route('/cart', methods=['GET', 'POST'])
+def cart():
+    if request.method == 'POST':
+        if 'clear_all' in request.form:
+            session.pop('cart', None)  # Clear the cart session
+            return redirect(url_for('cart'))
+
+        if 'update_quantity' in request.form:
+            item_index = int(request.form['item_index'])
+            new_quantity = int(request.form['new_quantity'])
+            cart = session.get('cart', [])
+            if 0 <= item_index < len(cart):
+                cart[item_index]['quantity'] = new_quantity
+                session['cart'] = cart
+            return jsonify({'success': True})
+
+        if 'remove_item' in request.form:
+            item_index = int(request.form['item_index'])
+            cart = session.get('cart', [])
+            if 0 <= item_index < len(cart):
+                del cart[item_index]
+                session['cart'] = cart
+            return jsonify({'success': True})
+
+        product_name = request.form['product_name']
+        product_price = int(request.form['product_price'])
+        cart = session.get('cart', [])
+        cart.append({'name': product_name, 'price': product_price, 'quantity': 1})
+        session['cart'] = cart
+        return redirect(url_for('cart'))
+
+    cart = session.get('cart', [])
+    total = sum(item['price'] * item['quantity'] for item in cart)
+
+    # Calculate tax and shipping based on your business logic
+    tax = total * 0.1  # Assuming a 10% tax rate
+    shipping = 15  # Assuming a flat shipping rate of $15
+
+    return render_template('cart.html', cart=cart, total=total, tax=tax, shipping=shipping)
 
 
 if __name__ == '__main__':

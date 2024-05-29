@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='category.css') }}">
 </head>
 <body>
+    <header>
+        <h1 class="left-aligned">{{ category_name }}</h1>  
+        <div class="icons"></div>
+            <a href="/cart">
+                <span style="font-size: 34px;">🛒</span>
+            </a>
+        </div>  
+    </header>
     <main>
-        <h1 class="left-aligned">{{ category_name }}</h1>
         <section class="product-grid">
             {% if category_name == 'lighting' %}
                 <div class="product-item">
@@ -19,6 +26,11 @@
                     <div class="caption">
                         <p>Butterfly lamp stand - Beautiful lamp for you!</p>
                         <p class="price">Ksh 1500</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="1500">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -28,6 +40,11 @@
                     <div class="caption">
                         <p>Abstract Couple Lamp Figurines: Modern home decor for bedroom or office. Perfect anniversary gift!</p>
                         <p class="price">Ksh 3500</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="3500">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -37,6 +54,11 @@
                     <div class="caption">
                         <p>Globe chandelier - Elegant design for modern homes</p>
                         <p class="price">Ksh 12750</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="12750">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -46,6 +68,11 @@
                     <div class="caption">
                         <p>Chandelier - Sleek, wave-like hanging light fixture. </p>
                         <p class="price">Ksh 58000</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="58000">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -55,6 +82,11 @@
                     <div class="caption">
                         <p>Chandelier - Artistic circular lights interlinked with leaf-like designs</p>
                         <p class="price">Ksh 16537</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="16537">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -64,6 +96,11 @@
                     <div class="caption">
                         <p> chandelier transcends mere lighting — it’s a sculptural masterpiece that graces any space with its contemporary allure.</p>
                         <p class="price">Ksh 113570</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="113570">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -73,6 +110,11 @@
                     <div class="caption">
                         <p>Lamp for bedside reading desk</p>
                         <p class="price">Ksh 6500</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="6500">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -82,6 +124,11 @@
                     <div class="caption">
                         <p>Bedside lamp</p>
                         <p class="price">Ksh 9300</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="9300">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -91,6 +138,11 @@
                     <div class="caption">
                         <p>Table desk lamp</p>
                         <p class="price">ksh 8500</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="8500">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -100,6 +152,11 @@
                     <div class="caption">
                         <p>Light Globe Chandelier Bubble Gold Pendant</p>
                         <p class="price">Ksh 21350</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="21350">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -109,6 +166,11 @@
                     <div class="caption">
                         <p>Louise Modern chandelier</p>
                         <p class="price">Ksh 57550</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="57550">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -118,6 +180,11 @@
                     <div class="caption">
                         <p>Metal Black Chandelier Height Adjustable Pendant Lighting</p>
                         <p class="price">Ksh 95550</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="95550">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -127,6 +194,11 @@
                     <div class="caption">
                         <p>Porsa chandelier</p>
                         <p class="price">Ksh 75950</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="75950">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -136,6 +208,11 @@
                     <div class="caption">
                         <p>Scandinavian Ring Chandelier</p>
                         <p class="price">Ksh 67850</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="67850">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="product-item">
@@ -145,6 +222,11 @@
                     <div class="caption">
                         <p>White chandelier</p>
                         <p class="price">Ksh 69850</p>
+                        <form action="{{ url_for('cart') }}" method="post">
+                            <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                            <input type="hidden" name="product_price" value="69850">
+                            <button class="add-to-cart" type="submit">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
 
@@ -157,7 +239,11 @@
                 <div class="caption">
                     <p>A cozy, modern green armchair with wooden legs, perfect for adding a pop of color to any living space.</p>
                     <p class="price">Ksh 7500</p>
-                </div>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="7500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
             </div>
             <div class="product-item">
                 <a href="#">
@@ -166,6 +252,11 @@
                 <div class="caption">
                     <p>A stylish, vibrant red armchair featuring a patterned cushion, ideal for creating a focal point in your room.</p>
                     <p class="price">Ksh 9550</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="9550">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -175,6 +266,11 @@
                 <div class="caption">
                     <p>A pair of elegant blue armchairs with sleek wooden legs, providing a sophisticated seating option for any room.</p>
                     <p class="price">Ksh 7750</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="7750">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -184,6 +280,11 @@
                 <div class="caption">
                     <p>A luxurious, grey upholstered armchair with a soft, fluffy cushion, designed for ultimate comfort and style.</p>
                     <p class="price">Ksh 8500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="8500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -193,6 +294,11 @@
                 <div class="caption">
                     <p>A plush, light green armchair adorned with decorative pillows, perfect for a cozy reading nook or a stylish accent piece.</p>
                     <p class="price">Ksh 6537</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="6537">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -202,6 +308,11 @@
                 <div class="caption">
                     <p>A spacious, dark grey sectional sofa with ample seating and contemporary design, ideal for large living areas.</p>
                     <p class="price">Ksh 5570</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="5570">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -211,6 +322,11 @@
                 <div class="caption">
                     <p>A chic living room setup featuring a light grey sofa, complemented by vibrant green armchairs and a modern coffee table.</p>
                     <p class="price">Ksh 65500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="65500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -220,6 +336,11 @@
                 <div class="caption">
                     <p>A sophisticated arrangement with a sleek grey sofa set, including matching armchairs, perfect for a minimalist yet stylish living space.</p>
                     <p class="price">Ksh 93700</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="93700">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -229,6 +350,11 @@
                 <div class="caption">
                     <p>A cozy and inviting living room setup with a beige sofa, complemented by a light blue rug and modern decor elements.</p>
                     <p class="price">ksh 85850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="85850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             
@@ -240,6 +366,11 @@
                 <div class="caption">
                     <p>A sophisticated dining set featuring a dark wooden table and six high-back upholstered chairs. </p>
                     <p class="price">Ksh 21350</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="21350">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -249,6 +380,11 @@
                 <div class="caption">
                     <p>A modern, oval-shaped dining table with a glass top and sleek, beige upholstered chairs.</p>
                     <p class="price">Ksh 57550</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="57550">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -258,6 +394,11 @@
                 <div class="caption">
                     <p>A dining set with a glossy white table and dark grey chairs, accented by modern decor and unique lighting.</p>
                     <p class="price">Ksh 95550</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="95550">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -268,6 +409,11 @@
                     <p>dining room setup featuring a rectangular black table with white cushioned chairs.</p> 
                     <p></p>The black accent wall and modern lighting create a striking contrast, making this a standout piece for any home.</p>
                     <p class="price">Ksh 75950</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="75950">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -278,6 +424,11 @@
                     <p>A mid-century modern inspired dining set with a light wooden table and white upholstered chairs.</p>
                     <p></p>The warm wood paneling and artistic decor make this a cozy yet stylish choice for dining areas.</p>
                     <p class="price">Ksh 67850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="67850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -288,6 +439,11 @@
                     <p>A minimalist dining set with a simple, rectangular table and beige upholstered chairs.</p>
                     <p></p>The neutral color palette and elegant decor make it a versatile addition to any dining room.</p>
                     <p class="price">Ksh 49850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="49850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -296,8 +452,12 @@
                 </a>
                 <div class="caption">
                     <p>A compact, round dining table with elegant white chairs, perfect for smaller spaces.</p> 
-                    <p>airy and light decor, combined with a cozy rug, creates a charming and inviting dining nook.</p>
                     <p class="price">Ksh 32140</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="32140">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -307,19 +467,12 @@
                 <div class="caption">
                     <p>A modern dining set featuring a white rectangular table and sleek, white chairs.The contemporary decor and minimalist setup make it a stylish choice for any modern home.</p>
                     <p class="price">Ksh 25780</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="25780">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
-            </div>
-
-            <div class="product">
-                <img src="{{ url_for('static', filename='images/' ~ product.image) }}" alt="{{ product.name }}">
-                <p>{{ product.description }}</p>
-                <p>Ksh {{ product.price }}</p>
-                <form action="{{ url_for('add_to_cart') }}" method="post">
-                    <input type="hidden" name="product_id" value="{{ product.id }}">
-                    <button type="submit" class="add-to-cart-btn">
-                        <img src="{{ url_for('static', filename='images/cart_icon.png') }}" alt="Cart Icon"> ADD TO CART
-                    </button>
-                </form>
             </div>
 
             <div class="product-item">
@@ -329,6 +482,11 @@
                 <div class="caption">
                     <p>A sleek dining set with a light wooden table and chic, green velvet chairs.</p>
                     <p class="price">Ksh 25870</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="25870">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -339,6 +497,11 @@
                 <div class="caption">
                     <p>A luxurious dining set with a marble-topped table and plush, beige chairs</p>
                     <p class="price">Ksh 55850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="55850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -348,6 +511,11 @@
                 <div class="caption">
                     <p>An elegant dining set with a white rectangular table and matching upholstered chairs.</p>
                     <p class="price">Ksh 15850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="15850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -357,6 +525,11 @@
                 <div class="caption">
                     <p>A vibrant dining set featuring a rectangular table with a mix of pink and green velvet chairs</p>
                     <p class="price">Ksh 45850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="45850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
                 <!-- Bathroom vanities products -->
@@ -365,23 +538,32 @@
                 <!-- Add similar structure for other categories -->
             {% elif category_name == 'vases' %}
             <div class="product-item">
-                <a href="#">
+                <a href="/icon">
                     <img src="{{ url_for('static', filename='vases/Circular Hollow beige Ceramic 3 sets ofVases.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p> trio of modern, ceramic vases in soft white, featuring abstract circular designs. These vases, filled with dried floral arrangements, make a stylish and contemporary addition to any home decor.
-                    </p>
-                    <p class="price">69850</p>
+                    <p> A trio of modern, ceramic vases in soft white, featuring abstract circular designs.</p>
+                    <p class="price">Ksh 1900</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="1900">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
             <div class="product-item">
-                <a href="#">
+                <a href="/icon">
                     <img src="{{ url_for('static', filename='vases/Orange Ceramic vase set, aesthetic.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A striking, orange ceramic vase with a unique, organic shape. This eye-catching piece is perfect for adding a pop of color and artistic flair to your living space, especially when paired with dried grasses.</p>
-                    <p class="price">69850</p>
+                    <p>A striking, orange ceramic vase with a unique, organic shape.</p>
+                    <p class="price">Ks 2850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="2850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -390,8 +572,13 @@
                     <img src="{{ url_for('static', filename='vases/Beige vases.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p> set of three white ceramic vases, each adorned with twine and filled with delicate dried grasses. These rustic yet elegant vases are ideal for creating a cozy and natural ambiance in any room.</p>
-                    <p class="price">69850</p>
+                    <p> Set of three white ceramic vases, each adorned with twine and filled with delicate dried grasses.</p>
+                    <p class="price">Ksh 5850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="5850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -400,8 +587,13 @@
                     <img src="{{ url_for('static', filename='vases/baby blue butterfly vases .jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A pair of white ceramic vases with intricate butterfly designs. The elegant, minimalist shapes and detailed adornments make these vases a beautiful centerpiece for any modern home.</p>
-                    <p class="price">69850</p>
+                    <p>A pair of white ceramic vases with intricate butterfly designs.</p>
+                    <p class="price">Ksh 4300</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="4300">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -410,8 +602,13 @@
                     <img src="{{ url_for('static', filename='vases/3 pieces grey vases.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A set of white ceramic vases in various geometric shapes, filled with dried floral arrangements. These vases offer a modern and sophisticated touch, perfect for minimalist interiors.</p>
-                    <p class="price">69850</p>
+                    <p>A set of white ceramic vases in various geometric shapes, filled with dried floral arrangements.</p>
+                    <p class="price">Ksh 1500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="1500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -420,8 +617,13 @@
                     <img src="{{ url_for('static', filename='vases/Nordic Decorative Ceramic Sculpture.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A duo of teal and gold ceramic vases with an abstract, intertwined design. These vases add a luxurious and artistic element to your decor, making them perfect for contemporary or eclectic spaces.</p>
-                    <p class="price">69850</p>
+                    <p>A duo of teal and gold ceramic vases with an abstract, intertwined design.</p>
+                    <p class="price">Ksh 3500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="3500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -430,8 +632,13 @@
                     <img src="{{ url_for('static', filename='vases/Furrow Sphere sets Vases.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A pair of ribbed ceramic vases in a soft cream color. The textured surface and neutral tones make these vases versatile decor pieces that can blend seamlessly into any room.</p>
-                    <p class="price">69850</p>
+                    <p>A pair of ribbed ceramic vases in a soft cream color.</p>
+                    <p class="price">Ks 8250</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="8250">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -440,8 +647,13 @@
                     <img src="{{ url_for('static', filename='vases/gold and white smooth vases.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A set of white and gold ceramic vases featuring a sleek, modern design. These vases, with their glossy finish and elegant color combination, are perfect for adding a touch of luxury to your decor.</p>
-                    <p class="price">69850</p>
+                    <p>A set of white and gold ceramic vases featuring a sleek, modern design.</p>
+                    <p class="price">Ksh 4200</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="4200">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -450,8 +662,13 @@
                     <img src="{{ url_for('static', filename='vases/2 grey sets vases.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A white, sculptural ceramic vase with an abstract, wavy design, filled with fresh tulips. This vase adds a contemporary and artistic touch to any space, making it a standout piece in modern decor.</p>
-                    <p class="price">69850</p>
+                    <p>A white, sculptural ceramic vase with an abstract, wavy design, filled with fresh tulips.</p>
+                    <p class="price">Ksh 3900</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="3900">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -460,8 +677,13 @@
                     <img src="{{ url_for('static', filename='vases/Donut shaped gold white set vases.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A set of white ceramic vases with gold accents, filled with dried floral arrangements. These vases combine elegance and modernity, making them ideal for sophisticated interiors.</p>
-                    <p class="price">69850</p>
+                    <p>A set of white ceramic vases with gold accents, filled with dried floral arrangements.</p>
+                    <p class="price">Ksh 1950</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="1950">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -470,8 +692,13 @@
                     <img src="{{ url_for('static', filename='vases/4 white set vases.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A collection of ribbed white ceramic vases in various shapes and sizes, filled with pampas grass. These vases offer a clean and modern aesthetic, perfect for minimalist home decor.</p>
-                    <p class="price">69850</p>
+                    <p>A collection of ribbed white ceramic vases in various shapes and sizes, filled with pampas grass.</p>
+                    <p class="price">Ksh 7120</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="7120">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -480,8 +707,13 @@
                     <img src="{{ url_for('static', filename='vases/Green Ceramics Golden Cutout Vase.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A pair of teal ceramic vases with gold accents, featuring a unique, intertwined design. These vases add a luxurious and artistic touch to your decor, making them perfect for contemporary or eclectic spaces.</p>
-                    <p class="price">69850</p>
+                    <p>A pair of teal ceramic vases with gold accents, featuring a unique, intertwined design.</p>
+                    <p class="price">Ksh 550</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="550">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -490,8 +722,13 @@
                     <img src="{{ url_for('static', filename='vases/crafted woven vases.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A minimalist, beige ceramic vase filled with pampas grass. The neutral tones and simple design make this vase a versatile and stylish addition to any room.</p>
-                    <p class="price">69850</p>
+                    <p>A minimalist, beige ceramic vase filled with pampas grass.</p>
+                    <p class="price">Ksh 980</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="980">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -501,8 +738,13 @@
                     <img src="{{ url_for('static', filename='vases/brown and white.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A round, textured ceramic vase filled with dried branches. This vase offers a rustic yet elegant touch, perfect for adding natural decor elements to your home.</p>
-                    <p class="price">69850</p>
+                    <p>A round, textured ceramic vase filled with dried branches.</p>
+                    <p class="price">Ksh 3450</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="3450">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -511,8 +753,13 @@
                     <img src="{{ url_for('static', filename='vases/dark grey 2 piece vases.jpeg') }}" alt="vases">
                 </a>
                 <div class="caption">
-                    <p>A modern, beige ceramic vase with a round body and narrow neck, filled with pampas grass. This vase is ideal for creating a chic and contemporary look in your living space.</p>
-                    <p class="price">69850</p>
+                    <p>A modern, beige ceramic vase with a round body and narrow neck, filled with pampas grass.</p>
+                    <p class="price">Ksh 2500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="2500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -522,7 +769,12 @@
                 </a>
                 <div class="caption">
                     <p>DT</p>
-                    <p class="price">69850</p>
+                    <p class="price">Ksh 9850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="9850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -532,7 +784,12 @@
                 </a>
                 <div class="caption">
                     <p>DT</p>
-                    <p class="price">69850</p>
+                    <p class="price">Ksh 350</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="350">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -542,7 +799,12 @@
                 </a>
                 <div class="caption">
                     <p>DT</p>
-                    <p class="price">69850</p>
+                    <p class="price">Ksh 950</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="950">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -552,7 +814,12 @@
                 </a>
                 <div class="caption">
                     <p>DT</p>
-                    <p class="price">69850</p>
+                    <p class="price">Ksh 1200</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="1200">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -562,7 +829,12 @@
                 </a>
                 <div class="caption">
                     <p>DT</p>
-                    <p class="price">69850</p>
+                    <p class="price">Ksh 1400</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="1400">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -572,7 +844,12 @@
                 </a>
                 <div class="caption">
                     <p>DT</p>
-                    <p class="price">69850</p>
+                    <p class="price">Ksh 1600</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="1600">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
         
@@ -583,8 +860,13 @@
                     <img src="{{ url_for('static', filename='bedroom/5 sets bedroom.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Modern beige bed, gold accents, luxurious bed</p>
+                    <p class="price">Ksh 53000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="53000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -593,8 +875,13 @@
                     <img src="{{ url_for('static', filename='bedroom/green and white.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Emerald green headboard, geometric bedding, spacious elegant bedroom.</p>
+                    <p class="price">Ksh 88000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="88000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -603,8 +890,13 @@
                     <img src="{{ url_for('static', filename='bedroom/brown and white.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Contemporary gray bed, minimalist design, clean neutral setting.</p>
+                    <p class="price">Ksh 78000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="78000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -613,8 +905,13 @@
                     <img src="{{ url_for('static', filename='bedroom/Baby blue Upholstered Platform Storage Bed.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Circular blue headboard, unique design, bright airy space.</p>
+                    <p class="price">Ksh 67000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="67000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -623,8 +920,13 @@
                     <img src="{{ url_for('static', filename='bedroom/beige and brown 2.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Sleek wooden platform bed, modern simplistic aesthetic room.</p>
+                    <p class="price">Ksh 75000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="75000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -633,8 +935,13 @@
                     <img src="{{ url_for('static', filename='bedroom/beige and tan bedroom.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Classic tufted headboard, soft palette, cozy traditional bedroom.</p>
+                    <p class="price">Ksh 48000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="48000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -643,8 +950,13 @@
                     <img src="{{ url_for('static', filename='bedroom/Baby pink.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Pink-toned Bed: Modern minimalist design with plush headboard.</p>
+                    <p class="price">Ksh 98000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="98000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -653,8 +965,13 @@
                     <img src="{{ url_for('static', filename='bedroom/dark grey.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Grey Upholstered Bed: Sleek contemporary style, extended headboard.</p>
+                    <p class="price">Ksh 110000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="110000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -663,8 +980,13 @@
                     <img src="{{ url_for('static', filename='bedroom/olive green bedroom.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Wooden Frame Bed: Cozy rustic feel, white linens.</p>
+                    <p class="price">Ksh 78000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="78000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -673,8 +995,13 @@
                     <img src="{{ url_for('static', filename='bedroom/beige bedroom.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Low-Profile Platform Bed: Warm ambient lighting, oversized headboard.</p>
+                    <p class="price">Ksh 56000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="56000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -683,8 +1010,13 @@
                     <img src="{{ url_for('static', filename='bedroom/teal green.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Green Velvet Bed: Bold statement piece, modular design.</p>
+                    <p class="price">Ksh 120000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="120000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             
@@ -693,8 +1025,13 @@
                     <img src="{{ url_for('static', filename='bedroom/brown and beige.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Classic Grey Bedframe: Tufted headboard, includes bench.</p>
+                    <p class="price">Ksh 87000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="87000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -703,8 +1040,13 @@
                     <img src="{{ url_for('static', filename='bedroom/beige and green.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Beige and Green Bedroom decor</p>
+                    <p class="price">131000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="131000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -713,8 +1055,13 @@
                     <img src="{{ url_for('static', filename='bedroom/Blue bed.jpeg.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
+                    <p>Blue bed with a headboard</p>
                     <p class="price">69850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="69850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -723,8 +1070,13 @@
                     <img src="{{ url_for('static', filename='bedroom/grey and beige.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Grey and Beige bedroom</p>
+                    <p class="price"75000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="75000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -733,8 +1085,13 @@
                     <img src="{{ url_for('static', filename='bedroom/beige bedroom.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Perfect minimalist beige bedroom</p>
+                    <p class="price">45000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="45000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -743,8 +1100,13 @@
                     <img src="{{ url_for('static', filename='bedroom/ Bedroom Design.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Best bedroom design</p>
+                    <p class="price">50000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="50000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -753,8 +1115,13 @@
                     <img src="{{ url_for('static', filename='bedroom/mickey bed.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Micky mouse pink bed</p>
+                    <p class="price">Ksh 85000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="85000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -764,8 +1131,13 @@
                     <img src="{{ url_for('static', filename='bathroom/7 piece Marble Bathroom Accessory Set.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 2500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="2500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -774,8 +1146,13 @@
                     <img src="{{ url_for('static', filename='bathroom/white organizer.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 1850</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="1850">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -784,8 +1161,13 @@
                     <img src="{{ url_for('static', filename='bathroom/black organizer.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 2500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="2500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -794,8 +1176,13 @@
                     <img src="{{ url_for('static', filename='bathroom/black racks.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 1800</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="1800">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -803,8 +1190,13 @@
                     <img src="{{ url_for('static', filename='bathroom/Black Shower Caddy Shelf Organizer.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 2100</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="2100">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -812,8 +1204,13 @@
                     <img src="{{ url_for('static', filename='bathroom/Black Slimline Storage.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 2350</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="2350">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -821,8 +1218,13 @@
                     <img src="{{ url_for('static', filename='bathroom/black soap dispenser.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 3200</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="3200">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -830,8 +1232,13 @@
                     <img src="{{ url_for('static', filename='bathroom/cabinets.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 5500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="5500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -839,8 +1246,13 @@
                     <img src="{{ url_for('static', filename='bathroom/green cabinets.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 7500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="7500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -848,8 +1260,13 @@
                     <img src="{{ url_for('static', filename='bathroom/MARBLE GRAIN BATHROOM SET - 6 Pc Set.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 3500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="3500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -857,8 +1274,13 @@
                     <img src="{{ url_for('static', filename='bathroom/Next 3L Pedal Bin - White.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 4500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="4500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -866,8 +1288,13 @@
                     <img src="{{ url_for('static', filename='bathroom/organizer rack.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 3500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="3500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -875,8 +1302,13 @@
                     <img src="{{ url_for('static', filename='bathroom/organizer racks.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 3700</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="3700">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -884,8 +1316,13 @@
                     <img src="{{ url_for('static', filename='bathroom/Rising 3 Pcs_ Bathroom Set in Pearl Color.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 4100</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="2500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -893,8 +1330,13 @@
                     <img src="{{ url_for('static', filename='bathroom/Toothbrush Holder.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 2200</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="2200">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -902,8 +1344,13 @@
                     <img src="{{ url_for('static', filename='bathroom/vanity 1.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom vanity</p>
+                    <p class="price">Ksh 8900</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="8900">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -911,8 +1358,13 @@
                     <img src="{{ url_for('static', filename='bathroom/vanity 2.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom vanity</p>
+                    <p class="price">Ksh 9500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="9500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -920,8 +1372,13 @@
                     <img src="{{ url_for('static', filename='bathroom/vanity 3.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom vanity</p>
+                    <p class="price">Ksh 12500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="12500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -929,8 +1386,13 @@
                     <img src="{{ url_for('static', filename='bathroom/vanity 4.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom vanity</p>
+                    <p class="price">Ksh 10500</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="10500">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -938,8 +1400,13 @@
                     <img src="{{ url_for('static', filename='bathroom/vanity 5.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom vanity</p>
+                    <p class="price">Ksh 11000</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="11000">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -947,8 +1414,13 @@
                     <img src="{{ url_for('static', filename='bathroom/vases and organizer.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom vase and organizer</p>
+                    <p class="price">Ksh 4800</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="4800">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <div class="product-item">
@@ -956,8 +1428,13 @@
                     <img src="{{ url_for('static', filename='bathroom/bathroom organizers.jpeg') }}" alt="Bedroom decor">
                 </a>
                 <div class="caption">
-                    <p>DT</p>
-                    <p class="price">69850</p>
+                    <p>Bathroom organizer</p>
+                    <p class="price">Ksh 50</p>
+                    <form action="{{ url_for('cart') }}" method="post">
+                        <input type="hidden" name="product_name" value="Butterfly lamp stand">
+                        <input type="hidden" name="product_price" value="50">
+                        <button class="add-to-cart" type="submit">Add to Cart</button>
+                    </form>
                 </div>
             </div>
 
@@ -966,6 +1443,8 @@
             <h1>Category not found</h1>
         {% endif %}
         </section>
+
+        <script src="category.js"></script>
     </main>
 </body>
 </html>
