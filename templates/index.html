@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecoHub - The Home of Interior Decor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="{{ url_for('static', filename='Landing_page.jpg') }}" alt="Landing page image">
+    </div>
+    <div class="text-overlay">
+      <div class="logo">
+        <a href="{{ url_for('index') }}" class="logo-link">DecoHub</a>
+      </div>
+      <h1>THE HOME OF INTERIOR DECOR</h1>
+    </div>
+  </section>
+  
+  <style>
+    .logo-link {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+  
+  <section class="page-2">
+    <div class="landing_page_2">
+      <img src="{{ url_for('static', filename='landing_page_2.png') }}" alt="Landing page image" class="my-image">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <h3>Customer Service</h3>
+        
+      </div>
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Email: nahimamadey1@gmail.com</p>
+        <p>Email: muktarabdiaziz12@gmail.com</p>
+        <p>Phone: 0712584960</p>
+        <p class="loo"><b>Operating Hours:</b></p>
+        <p>Mon-Fri: 9am-9pm EST</p>
+        <p>Sat: 9am-6pm EST</p>
+      </div>
+    <div class="decorative-line"></div>
+    <div class="developers">
+    <p>Developed by Nahima Madey & Abdiaziz</p>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 DecoHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Add your scripts here -->
+  <script src="script.js"></script>
+</body>
+</html>

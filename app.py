@@ -13,6 +13,11 @@ from database import session as db_session  # Import your database session
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
+
+app.static_folder = 'static'
+app.static_url_path = '/static'
+
+
 # Configure SQLAlchemy database URI using environment variable
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
 app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
@@ -53,6 +58,10 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Login')
 
 # Routes
+@app.route('/')
+def landing_page():
+    return render_template('index.html')
+
 
 @app.route('/DecoHub')
 def index():
