@@ -5,7 +5,6 @@ from sqlalchemy.orm import sessionmaker
 from models import Base  # Ensure models.py defines the Base class and other models
 from dotenv import load_dotenv
 import os
-from sqlalchemy.dialects.mysql import mysqlconnector
 
 # Load environment variables from .env file
 load_dotenv('.env')
@@ -17,7 +16,7 @@ if not SQLALCHEMY_DATABASE_URI:
     raise ValueError("No SQLALCHEMY_DATABASE_URI provided in environment variables")
 
 # Create an engine
-engine = create_engine(SQLALCHEMY_DATABASE_URI, dialect="mysqlconnector")
+engine = create_engine(SQLALCHEMY_DATABASE_URI)
 
 # Create all tables in the database
 Base.metadata.create_all(engine)

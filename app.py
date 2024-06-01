@@ -6,17 +6,19 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Email, Length, ValidationError, EqualTo
 from flask_bcrypt import Bcrypt
+from dotenv import load_dotenv
 import os
 from models import User  # Import your User model
 from database import session as db_session  # Import your database session
 
+# Load environment variables from .env
+load_dotenv()
+
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
-
 app.static_folder = 'static'
 app.static_url_path = '/static'
-
 
 # Configure SQLAlchemy database URI using environment variable
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
@@ -61,7 +63,6 @@ class LoginForm(FlaskForm):
 @app.route('/')
 def landing_page():
     return render_template('index.html')
-
 
 @app.route('/DecoHub')
 def index():
