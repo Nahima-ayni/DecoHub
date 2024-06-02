@@ -22,6 +22,8 @@ app.static_url_path = '/static'
 
 # Configure SQLAlchemy database URI using environment variable
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
+print(f"Database URI: {SQLALCHEMY_DATABASE_URI}")
+
 app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
