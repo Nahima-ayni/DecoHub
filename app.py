@@ -143,7 +143,7 @@ def cart():
         product_name = request.form['product_name']
         product_price = int(request.form['product_price'])
         cart = flask_session.get('cart', [])
-        
+
         if cart:  # Check if the cart is not empty
             total = sum(item['price'] * item['quantity'] for item in cart)
             tax = total * 0.1
@@ -151,7 +151,7 @@ def cart():
         else:
             total = 0
             tax = 0
-            shipping = 0        
+            shipping = 0
         # Check if the product already exists in the cart
         existing_item = next((item for item in cart if item['name'] == product_name and item['price'] == product_price), None)
 
