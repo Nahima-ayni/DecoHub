@@ -57,11 +57,7 @@ Welcome to DecoHub, your ultimate destination for stylish and high-quality home 
 6. **Add to Cart**: Add desired items to your cart for purchase.
 7. **Checkout**: Proceed to checkout to complete your purchase, either as a guest or by logging into your account.
 
-## Additional Information
 
-- **Account Management**: Create an account to track your orders, save favorite items, and receive personalized recommendations.
-- **Secure Payment**: Our website ensures secure payment processing for a safe shopping experience.
-- **Shipping and Returns**: Detailed information on shipping options and return policies available in the footer of the website.
 
 ## Conclusion
 
