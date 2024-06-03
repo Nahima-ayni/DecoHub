@@ -4,6 +4,7 @@ from sqlalchemy import Column, Integer, String, Float, ForeignKey
 from sqlalchemy.orm import relationship, declarative_base
 from flask_login import UserMixin
 
+
 Base = declarative_base()
 
 class User(UserMixin, Base):
