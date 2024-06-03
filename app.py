@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from flask import Flask, render_template, redirect, flash, url_for, request, jsonify, session as flask_session
 from flask_sqlalchemy import SQLAlchemy
+import MySQLdb
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
